@@ -45,7 +45,7 @@ final public class HostView<V: View>: UIView {
             ])
             hostingController.didMove(toParent: parent)
         }
-        controller?.view.backgroundColor = .black
+        controller?.view.backgroundColor = .clear
     }
 }
 
