@@ -36,6 +36,7 @@ final public class HostView<V: View>: UIView {
             controller = hostingController
             parent?.addChild(hostingController)
             addSubview(hostingController.view)
+            backgroundColor = .systemPink
             NSLayoutConstraint.activate ([
                 hostingController.view.topAnchor.constraint(equalTo: topAnchor),
                 hostingController.view.leadingAnchor.constraint(equalTo: leadingAnchor),

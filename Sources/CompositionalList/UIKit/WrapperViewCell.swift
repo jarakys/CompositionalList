@@ -18,6 +18,8 @@ final public class WrapperViewCell<V: View>: BaseCollectionViewCell<V> {
         hostView = HostView<V>(parent: parent, view: viewModel)
         guard let hostView = hostView else { return }
         contentView.addSubview(hostView)
+        contentView.backgroundColor = .red
+        backgroundColor = .blue
         hostView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             hostView.topAnchor.constraint(equalTo: contentView.topAnchor),

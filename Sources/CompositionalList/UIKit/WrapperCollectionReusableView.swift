@@ -20,6 +20,7 @@ final public class WrapperCollectionReusableView<V: View>: UICollectionReusableV
         guard let hostView = hostView else { return }
         hostView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(hostView)
+        backgroundColor = .green
         NSLayoutConstraint.activate([
             hostView.topAnchor.constraint(equalTo: topAnchor),
             hostView.leadingAnchor.constraint(equalTo: leadingAnchor),
