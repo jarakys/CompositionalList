@@ -50,7 +50,6 @@ public final class DiffCollectionView<ViewModel: SectionIdentifierViewModel,
         self.init()
         collectionView = .init(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .clear
-        collectionView.
         collectionView.register(WrapperViewCell<RowView>.self)
         collectionView.registerHeader(WrapperCollectionReusableView<HeaderFooterView>.self, kind: UICollectionView.elementKindSectionHeader)
         collectionView.registerHeader(WrapperCollectionReusableView<HeaderFooterView>.self, kind: UICollectionView.elementKindSectionFooter)
